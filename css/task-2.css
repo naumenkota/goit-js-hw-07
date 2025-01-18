@@ -1,0 +1,19 @@
+
+ul.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    border-radius: 50px;
+}
+
+ul.gallery li {
+    width: calc(33.33% - 16px);
+
+}
+
+ul.gallery img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
