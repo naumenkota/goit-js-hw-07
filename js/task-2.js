@@ -25,12 +25,14 @@ const images = [
   }
 ];
 const imageGallery = document.querySelector('ul.gallery');
+const elementArray = [];
 images.forEach(image => {
   const elementImg = document.createElement('img');
   const elementList = document.createElement('li');
   elementImg.src = image.url;
   elementImg.alt = image.alt;
-  elementList.append(elementImg);
-  imageGallery.append(elementList);
+  elementList.append(elementImg)
+  elementArray.push(elementList);
 });
+imageGallery.append(...elementArray);
 
